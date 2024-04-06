@@ -1,0 +1,31 @@
+{
+  "name": "vscode-extension-command-executor",
+  "displayName": "Your Extension Name",
+  "description": "Description of your extension",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "main": "./out/extension.ts",
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.showCommands",
+        "title": "Show Commands"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:extension.showCommands"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "@types/vscode": "^1.0.0",
+    "typescript": "^4.0.0",
+    "vsce": "^1.0.0"
+  }
+}
